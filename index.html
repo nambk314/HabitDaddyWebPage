@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HabitDaddy — Build consistent habits</title>
+<meta name="description" content="A simple habit tracker with smart reminders, a focused timer, and clear analytics to build consistency. Private by design. iOS only.">
+<meta property="og:title" content="HabitDaddy — Build consistent habits">
+<meta property="og:description" content="A simple habit tracker with smart reminders, a focused timer, and clear analytics.">
+<meta property="og:image" content="./resources/AnalyticsView.PNG">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%85%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#0b0b0f;--text:#e7e7ea;--muted:#a1a1aa;--accent:#8b5cf6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.header,.section,.footer{max-width:900px;margin:0 auto;padding:24px}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.cta{display:inline-block;background:var(--accent);color:#fff;padding:12px 16px;border-radius:10px}
+.hero{padding:48px 24px;text-align:center}
+.hero h1{font-size:40px;margin:0 0 8px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:#14141a;border:1px solid #22232b;border-radius:12px;padding:16px}
+img{max-width:100%;height:auto;border-radius:12px}
+.small{color:var(--muted);font-size:14px}
+hr{border:0;border-top:1px solid #22232b;margin:32px 0}
+.app-emoji{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;font-size:20px;line-height:1;background:#14141a;border-radius:8px}
+.gallery{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.gallery img{border-radius:12px;border:1px solid #22232b}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <div style="display:flex;gap:12px;align-items:center">
+      <span class="app-emoji" role="img" aria-label="HabitDaddy icon">✅</span>
+      <strong>HabitDaddy</strong>
+    </div>
+    <nav>
+      <a href="#support">Support</a>
+      <!-- <a class="cta" href="https://apps.apple.com/app/idXXXXXXXXX">Download</a> -->
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Build consistent habits</h1>
+    <p class="small">Create tasks, get timely reminders, and track your consistency with simple analytics.</p>
+    <!-- <p><a class="cta" href="https://apps.apple.com/app/idXXXXXXXXX">Download on the App Store</a></p> -->
+  </section>
+
+  <section class="section">
+    <h2>Why HabitDaddy?</h2>
+    <div class="grid">
+      <div class="card"><strong>Create habits with icons</strong><br><span class="small">Make tasks visual and clear.</span></div>
+      <div class="card"><strong>Smart reminders</strong><br><span class="small">Stay on track without nagging.</span></div>
+      <div class="card"><strong>Timer + Live Activity</strong><br><span class="small">Focus with Lock Screen support.</span></div>
+      <div class="card"><strong>Consistency Index</strong><br><span class="small">See progress over time.</span></div>
+      <div class="card"><strong>Private by design</strong><br><span class="small">On-device data. No tracking.</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Screenshots</h2>
+    <div class="gallery">
+      <img src="./resources/TaskListView.PNG" alt="Habit list with icons">
+      <img src="./resources/TimerView.PNG" alt="Focused timer view">
+      <img src="./resources/TaskCreationViews.PNG" alt="Task creation screens">
+      <img src="./resources/CustomTimerView.PNG" alt="Custom timer view">
+      <img src="./resources/CalendarView.PNG" alt="Calendar view">
+      <img src="./resources/CalendarGitView.PNG" alt="Consistency calendar view">
+      <img src="./resources/CalendarGitViewPomodoro.PNG" alt="Pomodoro calendar view">
+    </div>
+  </section>
+
+  <section id="support" class="section">
+    <h2>Support</h2>
+    <p>Email: <a href="mailto:mysimpleessential@gmail.com">mysimpleessential@gmail.com</a></p>
+    <!-- <p>GitHub issues: <a href="https://github.com/nambui/habit-daddy-cursor/issues">Report a bug or request a feature</a></p> -->
+    <h3>FAQ</h3>
+    <p><strong>Not receiving notifications?</strong><br>
+    Allow notifications in iOS Settings, check Focus/Scheduled Summary, and open the app after install/update. If all tasks are complete, no further notifications are scheduled for that day.</p>
+    <p><strong>Is my data synced or shared?</strong><br>Data stays on your device. No external sync or sharing.</p>
+  </section>
+
+  <section class="section">
+    <h2>Privacy</h2>
+    <p>HabitDaddy does not collect, sell, or share personal data. All data is stored on your device, and notifications are scheduled on-device. No third-party analytics.</p>
+    <p><a href="./privacy.html">Read the full privacy policy</a></p>
+  </section>
+</main>
+
+<footer class="footer small">
+  <hr>
+  <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <div>© <span id="y"></span> HabitDaddy</div>
+    <div><a href="./privacy.html">Privacy</a> · <a href="#support">Support</a> · <a href="https://github.com/nambui/habit-daddy-cursor">GitHub</a></div>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</footer>
+</body>
+</html>
