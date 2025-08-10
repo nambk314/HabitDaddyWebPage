@@ -7,11 +7,13 @@
 <meta name="description" content="A simple habit tracker with smart reminders, a focused timer, and clear analytics to build consistency. Private by design. iOS only.">
 <meta property="og:title" content="HabitDaddy — Build consistent habits">
 <meta property="og:description" content="A simple habit tracker with smart reminders, a focused timer, and clear analytics.">
-<meta property="og:image" content="./resources/AnalyticsView.PNG">
+<meta property="og:image" content="./resources/AnalyticsView1.PNG">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%85%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="./resources/Logo.png">
+<link rel="license" href="./LICENSE">
+<link rel="license" href="./LICENSE-content">
 <style>
-:root{--bg:#0b0b0f;--text:#e7e7ea;--muted:#a1a1aa;--accent:#8b5cf6}
+:root{--bg:#0b0b0f;--text:#e7e7ea;--muted:#a1a1aa;--accent:#00E6B2}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .header,.section,.footer{max-width:900px;margin:0 auto;padding:24px}
@@ -33,7 +35,7 @@ hr{border:0;border-top:1px solid #22232b;margin:32px 0}
 <header class="header">
   <div class="nav">
     <div style="display:flex;gap:12px;align-items:center">
-      <span class="app-emoji" role="img" aria-label="HabitDaddy icon">✅</span>
+      <img src="./resources/Logo.png" alt="HabitDaddy logo" width="32" height="32" style="border-radius:6px">
       <strong>HabitDaddy</strong>
     </div>
     <nav>
@@ -64,13 +66,15 @@ hr{border:0;border-top:1px solid #22232b;margin:32px 0}
   <section class="section">
     <h2>Screenshots</h2>
     <div class="gallery">
-      <img src="./resources/TaskListView.PNG" alt="Habit list with icons">
-      <img src="./resources/TimerView.PNG" alt="Focused timer view">
-      <img src="./resources/TaskCreationViews.PNG" alt="Task creation screens">
-      <img src="./resources/CustomTimerView.PNG" alt="Custom timer view">
       <img src="./resources/CalendarView.PNG" alt="Calendar view">
       <img src="./resources/CalendarGitView.PNG" alt="Consistency calendar view">
       <img src="./resources/CalendarGitViewPomodoro.PNG" alt="Pomodoro calendar view">
+      <img src="./resources/CustomTimer.PNG" alt="Custom timer view">
+      <img src="./resources/TimerView.PNG" alt="Focused timer view">
+      <img src="./resources/TaskListView.PNG" alt="Habit list with icons">
+      <img src="./resources/AnalyticsView1.PNG" alt="Analytics view">
+      <img src="./resources/AnalyticsView2.PNG" alt="Analytics view">
+      <img src="./resources/TaskCreationView.PNG" alt="Task creation screens">
     </div>
   </section>
 
@@ -95,8 +99,9 @@ hr{border:0;border-top:1px solid #22232b;margin:32px 0}
   <hr>
   <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
     <div>© <span id="y"></span> HabitDaddy</div>
-    <div><a href="./privacy.html">Privacy</a> · <a href="#support">Support</a> · <a href="https://github.com/nambui/habit-daddy-cursor">GitHub</a></div>
+    <div><a href="./privacy.html">Privacy</a> · <a href="#support">Support</a></div>
   </div>
+  <div class="small">Code: MIT · Content: CC BY 4.0</div>
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </footer>
 </body>
